@@ -5,13 +5,16 @@ import {
 	UserOutlined,
 	DollarCircleOutlined,
 } from '@ant-design/icons'
-import OrdersTable from '../../../API/OrdersTable.jsx';
+
+import OrdersTable from '../../../API/OrdersTable.jsx'
+import CartChart from '../../../components/Charts/CartChart.jsx'
 
 export default function Dashboard() {
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
 			<Typography.Title level={2}>Dashboard</Typography.Title>
 
+	
 			<Space direction="horizontal">
 				<DashboardCard
 					title="Orders"
@@ -35,7 +38,10 @@ export default function Dashboard() {
 				/>
 			</Space>
 
-			{/* Таблица с последним заказом */}
+
+			<CartChart />  
+
+			
 			<OrdersTable />
 		</div>
 	)
