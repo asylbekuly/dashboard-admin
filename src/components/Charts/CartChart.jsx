@@ -45,7 +45,7 @@ export default function CartChart() {
 
 					<XAxis
 						dataKey='name'
-					
+
 						angle={-20}
 						textAnchor='end'
 						interval={0} 
